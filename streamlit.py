@@ -7,6 +7,10 @@ from predict_model import evaluate_model
 from visualization import plot_feature_importance
 from build_features import build_features
 from sklearn.preprocessing import MinMaxScaler
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), ".")))
+
 
 st.set_page_config(page_title="Real Estate Price Predictor", layout="centered")
 st.title("🏠 Real Estate Price Predictor")
