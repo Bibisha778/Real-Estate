@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
-from make_dataset import load_and_preprocess_data
+from src.data.make_dataset import load_and_preprocess_data
 from train_model import train_RFmodel
 from predict_model import evaluate_model
 from visualization import plot_feature_importance
