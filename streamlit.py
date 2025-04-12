@@ -2,10 +2,10 @@ import streamlit as st
 import pandas as pd
 import pickle
 from src.data.make_dataset import load_and_preprocess_data
-from train_model import train_RFmodel
-from predict_model import evaluate_model
-from visualization import plot_feature_importance
-from build_features import build_features
+from src.models.train_model import train_RFmodel
+from src.models.predict_model import evaluate_model
+from src.models.visualization import plot_feature_importance
+from src.features.build_features import build_features
 from sklearn.preprocessing import MinMaxScaler
 import sys
 import os
